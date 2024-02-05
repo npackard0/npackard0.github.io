@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Close Self Example</title>
-</head>
-<body>
-<h1>This page will close itself in a few seconds.</h1>
+<!doctype html>
+<html>
 
-<script>
-// Close the window after 5 seconds
-setTimeout(function() {
-    window.close();
-}, 50); // Adjust the time as needed (in milliseconds)
-</script>
-</body>
+<head>
+    <script>
+        window.onload = function load() {
+            window.open('', '_self', '');
+            window.close();
+        };
+    </script>
+</head>
+
+<body></body>
+
 </html>
